@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.page-border{
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
+body ,dt,dd,div ,dl ,ul ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,blockquote ,th ,td {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+div{
+    unicode-bidi:isolate;
+}
+body{
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    font-weight: normal;
+    color:#111;
+}
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+element.style{
+    visibility: visible;
+    animation-name: fadeInDown;
+}
+.page-border .top-border{
+    top: 0;
+}
+.page-border .bottom-border, .page-border .top-border {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+}
+.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+    background: #ccc 
+}
+.page-border .right-border , .page-border .left-border , .page-border .bottom-border, .page-border .top-border {
+    position: fixed;
+    z-index: 9999;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2)
+    format('woff2');
+    unicode-range:U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U +A640 -A69F, U +FE2E -FE2F;
+}
+
